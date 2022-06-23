@@ -19,5 +19,9 @@ Console.WriteLine("Número agência:" + conta1.numero_conta);
 Console.WriteLine("Nome agência:" + conta1.nome_agencia);
 Console.WriteLine("Saldo:" + conta1.saldo);
 
+//Exibição de valores 
+Console.WriteLine("Saldo de André pré-saque: " + conta1.saldo);
+conta1.Sacar(50);
+Console.WriteLine("Saldo da André pós-saque: " + conta1.saldo);
 // evento que fecha as informações
 Console.ReadKey();
