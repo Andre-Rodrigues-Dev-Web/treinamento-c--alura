@@ -1,19 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
+// Importação da classe
+using countbank;
+// Nome do banco
 Console.WriteLine("Banco ALR");
 
-// Valores e tipos de variáveis
-string titular = "André Laurentino";
-string conta = "10123-x";
-int numero_agencia = 20;
-string nome_agencia = "Agencia Bambuí";
-double saldo = 120.50;
+// Utilização da classe
+ContaCorrente conta1 = new ContaCorrente();
+conta1.titular = "André Laurentino";
+conta1.conta = "10000-x";
+conta1.numero_conta = 20;
+conta1.nome_agencia = "Agência Bambuí";
+conta1.saldo = 100.20; 
 
 // Exibição de informação
-Console.WriteLine("Titular:" + titular);
-Console.WriteLine("Conta:" + conta);
-Console.WriteLine("Número agência:" + numero_agencia);
-Console.WriteLine("Nome agência:" + nome_agencia);
-Console.WriteLine("Saldo:" + saldo);
+Console.WriteLine("Titular:" + conta1.titular);
+Console.WriteLine("Conta:" + conta1.conta);
+Console.WriteLine("Número agência:" + conta1.numero_conta);
+Console.WriteLine("Nome agência:" + conta1.nome_agencia);
+Console.WriteLine("Saldo:" + conta1.saldo);
 
 // evento que fecha as informações
 Console.ReadKey();
